@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <header>
+        <section class="a">
+            <section class="b">
+                <img class="b1" src="img/HD-wallpaper-beautiful-univers-planets-cosmos-univers-light.jpeg" alt="">
+                <nav class="b">
+                    <ul class="b">
+                        <li class="b1">I AM</li>
+                        <li class="b2">GARRY</li>
+                    </ul>
+                </nav>
+            </section>
+            <nav class="a">
+                <ul>
+                    <button class="a1" onclick="alert('Design Web Development we are using a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.Describing the presentation of a document written in markup language.An object-oriented computer programming language commonly used to create interactive effects within web browsers.')">Home</button>
+                    <button class="a2" onclick="alert('World Wide Web we give each other and made available online, collection of our best professional work. Sense of humor, Honest, Polite, Organized, Authentic, Determined, patient, Loyal.')">Portfolio</button>
+                    <button class="a3" onclick="alert('Skilled professional with experience in civil engineering and education. Now WEB DESIGNER DEVELOPMENT, Excellent communication and time management skills. Dependable worker and takes initiative to solve problems. English for Speakers of Other Languages: Labour Center, South Boston MA 2018-Present.')">About me</button>
+                    <button class="a4" onclick="alert('At School for now.')">Experience</button>
+
+                </ul>  
+            </nav>
+        </section>
+    </header>
+    <footer>
+        <section class="c">
+            <nav class="c">
+                <ul class="c">
+                    <li class="c1">DESIGNER</li>
+                    <li class="c2">WEB DEVELOPMENT</li>
+                </ul>
+                <nav class="container">
+                    <form onsubmit="sendEmail(); reset; return false">
+                        <h1>CONTACT ME</h1>
+                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="email" id="email" placeholder="Email id" required>
+                        <input type="text" id="phone" placeholder="Phone no." required>
+                        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                        <button type="submit">send</button>
+                    </form>
+                </nav>
+            </nav>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+                    Email.send({
+                        SecureToken: "856396d4-dddd-4511-b7f7-66f2c8195fc1",
+                        
+                        To : "jeangillesgarry1@gmail.com",
+                        From : document.getElementById("email").value,
+                        Subject : "New Contact From Enquiry",
+                        Body : "name: " + document.getElementById("name").value
+                            + "<br> Email: " +document.getElementById("email").value
+                            + "<br> Phone no: " + document.getElementById("phone").value
+                            + "<br> Message: " +document.getElementById("message").value
+                    }).then(
+                    message => alert("Message sent successfully")
+                    );
+                }
+            </script>
+        </section>
+    </footer>
+</body>
+</html>
