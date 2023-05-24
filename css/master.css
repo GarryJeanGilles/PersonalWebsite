@@ -2,7 +2,7 @@ header, section.a, section.b, section.c{
     border: 0.3px solid black;
 }
 section.a{
-    height: 450px;
+    height: 600px;
     width: 100%;
    display: flex;
    align-items: center;
@@ -13,14 +13,14 @@ section.a{
 }
 nav.a{
     position: absolute;
-    top: 345px;
+    top: 520px;
     margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 button.a1, button.a2, button.a3, button.a4{
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 700;
     margin: 10px;
     padding: 0.5em 1em;
@@ -52,14 +52,14 @@ button.a4:hover{
     color: var(--clr-light);
 }
 section.b{
-    height: 325px;
+    height: 400px;
     width: 60%;
     
 }
 li.b1, li.b2{
     text-align: center;
     list-style: none;
-    font-size: 90px;
+    font-size: 115px;
     color: yellow;
 }
 @keyframes slideInLeft{
@@ -75,14 +75,14 @@ li.b1, li.b2{
     animation:  slideInLeft 1s ease-in 0s 2 normal none;
 }
 img.b1{
-    height: 240px;
+    height: 400px;
     width: 100%;
 }
 nav.b{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -245px;
+    margin: -335px;
 }
 section.c{
     width: 100%;
@@ -92,15 +92,15 @@ section.c{
     background-color: burlywood;
     background-image: linear-gradient(1deg, black, transparent);
 }
-li.c1, li.c2{
+li.c1, li.c2, li.c3{
     list-style: none;
     margin: 40px;
-    font-size: 60px;
+    font-size: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-li.c1, li.c2{
+li.c1, li.c2, li.c3{
     animation:  slideInLeft 1s ease-in 0s 2 normal none;
     color: #641da5;
 }
